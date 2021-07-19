@@ -52,3 +52,11 @@
 # 功能： 直接输入键盘上可见字符和空格
 # 参数： 字符串, (注意，这个参数不是int32 类型)
 # 例子： DD_str("MyEmail@aa.bb.cc !@#$")
+
+7.  DD_todc(参数)
+    功能： 转换Windows虚拟键码到 DD 专用键码.
+    参数： Windows虚拟键码
+    例子：
+        int ddcode = DD_todc(VK_ESCAPE);
+
+        Dim ddcode As int32 = DD_todc(27);
